@@ -3,32 +3,90 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Jack's Portfolio</title>
+        <title>My Resume</title>
     </head>
     <body>
-        <h1>Jack's Portfolio</h1>
-        <h2>I'm a Web Developer</h2>
+        <h1>YaoHsing Tseng</h1>
+        <img src="assets/images/Selfie.JPG" height="200"/>
+
+        <h2>Summary</h2>
         <hr /> 
-        <h3>
-            <a href="public/movie-ranking.html">
-                Movie Ranking Project
-            </a><br/>
-            <img src="assets/images/movie-ranking.png" height="200"/>
-        </h3>
-        <h3>
-            <a href="public/birthday-invite.html">
-                Birthday Invite Project
-            </a><br />
-            <img src="assets/images/birthday-invite.png" height="200"/>
-        </h3>
-        <hr />
-        <h3>
-            <a href="public/about.html">
-                About Me
-            </a>
-            <a href="public/contact.html">
-                Contact Me
-            </a>
-        </h3>
+
+        <h2>Education</h2>
+            <ul>
+                <li>Master of Science, Mechanical Engineering - University of California, Los Angeles (2021 - 2023)</li>
+                <li>Bachelor of Science, Mechanical Engineering - National Central University, Zhongli Taiwan (2015 - 2019)</li>
+            </ul>
+        <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Velodyne Lidar Inc - Robotic Engineer Intern</strong>, San Jose, CA (Jun/2022 - Sep/2022)
+                    <ul>
+                        <li>Developed CI/CD for internal team with Ansible playbook and Jenkins to reduced provision time by 75%.</li>
+                        <li>Developed sensor fusion algorithm with camera and lidar data in C++ for lidar integrated system.</li>
+                        <li>Tested prototypes and standard products and wrote reports to document results.</li>
+                        <li>Built mobile robotic system with Embedded FreeRTOS, controlled the platform with BLE, and used CAN bus, I2C, and UART to communicate with sensor and motors. </li>
+                        <li>Provisioned Jetson Xavier firmware with Nvidia SDK through bash script and AWS CLI.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong> SERCOMM, Software Engineer</strong>, Taipei, Taiwan (Apr/2021 - Jun/2021)
+                    <ul>
+                        <li>Developed firmware of Wi-Fi Broadband routers with Fibocom microprocessor running with Linux OS</li>
+                        <li>Proactively monitored routers routing/switching through LAN traffic through Wireshark with OSI model,
+                            TCP/IP, and network architecture knowledge.</li>
+                        <li>Performed firmware unit testing/validation on router user interface with C in Linux OpenWrt.</li>
+                        <li>Worked with software development and testing team members to design and develop robust solutions to meet client requirements for functionality, scalability, and performance.</li>
+                    </ul>
+                </li>
+            </ul>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Firmware Development 6 DOF Drones</strong>
+                <ul>
+                    <li>Developed firmware of a 6-axis automatic robot drone with ARM Cortex MCUs in bare metal</li>
+                    <li>Processed IMU data and a python framework for visualization of drone flight simulation.</li>
+                    <li>Implement Kalman filter to reduce motor noise, and deployed Mahony filter sensor fusion to estimate attitude.</li>
+                    <li>Design PID controller to stabilize the whole robot platform, and control the attitude through WiFi.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Control System Design of 6-DOFs Robot Arm</strong>
+                <ul>
+                    <li>Designed and developed robotic system to achieve high efficiency and stabilization.</li>
+                    <li>Established a 6-DOF robot arm motion simulation with feedback force control in Simscape and Matlab.</li>
+                    <li>Designed control system with optimal control and adaptive control theories.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Neural Networks for EEG 4-Motors Classification</strong>
+                <ul>
+                    <li>Developed neural network models to classify EEG 4-motors data to achieve 75% accuracy.</li>
+                    <li>Implement shallow CNN, vanilla CNN, CNN+GRU, and CNN+LSTM in PyTorch</li>
+                    <li>Optimized networks model with Adam, and Adaboost optimizer.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Sales Prediction on Marijuana Products</strong>
+                <ul>
+                    <li>Engaged in end-to-end ML pipeline development to achieve 90% accuracy on Marijuana sales prediction.</li>
+                    <li>Preprocessed time-series and non-time series datasets through feature selection and data augmentation.</li>
+                    <li>Designed and implemented supervised algorithm like Decision Trees, XGboost, Polynomial Regression, and
+                        built Neural Network model in PyTorch.</li>
+                    <li>Performed hyper-parameters optimization with Grid Search and Random Search in Scikit-learn</li>
+                </ul>
+            </li>
+            <li>
+                <strong>EXT2 File Systems</strong>
+                <ul>
+                    <li>Built EXT2 file systems in Arch Linux Environments with VirtualBox and successfully launch the file system.</li>
+                    <li>Designed superblock, group descriptor table, bitmap, inode, and root/files blocks.</li>
+                    <li>Formed hard link and symbolic link for the files.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Skills</h2>
+        
     </body>
 </html>
